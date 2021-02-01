@@ -109,4 +109,49 @@ print(a)
 next()
 # 리스트 뒤집기 reverce
 
-위치반환
+a = [1,2,3]
+print(a.index(3))
+# 위치 반환 index
+# 리스트에 x 값이 있으면 x의 위치 값을 돌려준다
+"print(a.index(k))"
+next()
+# 하지만 리스트에 값이 존재하지 않으면 오류가 발생한다.
+
+
+a = [1,2,3]
+a.insert(0,4)
+print(a)
+next()
+# 리스트의 a번째 위치에 b값을 삽입하는 함수 insert
+
+a = [1,2,3,4,5,6,7]
+a.remove(4)
+print(a)
+next()
+# 리스트의 요소를 지우는 함수. 만약 리스트에 요소가 복수개이면 첫번째 요소만 제거
+
+a = [1,2,3]
+print(a.pop())
+print(a)
+next()
+# 리스트의 맨 마지막 요소를 돌려주고 그 요소는 삭제한다 pop
+
+a = [1,2,3]
+print(a.pop(1))
+print(a)
+next()
+# pop(x)는 리스트의 x번째 요소를 돌려주고 그 요소는 삭제한다.
+
+a = [1,2,3,1]
+print(a.count(1))
+next()
+# count(x)는 리스트 안에 x가 몇 개 있는지 조사하여 그 개수를 돌려주는 함수
+
+a = [1,2,3]
+a.extend([4,5])
+print(a)
+b = [6,7]
+a.extend(b)
+print(a)
+# extend(x)에서 x는 리스트만 올 수 있으며 원래의 a리스트에 x리스트를 더하게 된다.
+
