@@ -14,7 +14,7 @@ Comment {
     id: number;                 // 숫자, 자동 생성
     contents: string;           // 문자열, 필수
     created_at: Date;           // 날짜, 생성시 자동 생성
-    updated_at: Date;           // 날짜, 생성시 자동 생성, 수정시 자동 갱신,
+    updated_at: Date;           // 날짜, 생성시 자동 생성, 수정시`` 자동 갱신,
 }
 '''
 class Todo(models.Model):
