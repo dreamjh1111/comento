@@ -1,7 +1,8 @@
 from rest_framework import generics
 
-from todos import models
+from portfolio import models
 from .serializers import TodoSerializer
+from .serializers import CommentSerializer
 
 class ListTodo(generics.ListCreateAPIView):
     queryset = models.Todo.objects.all()
@@ -9,5 +10,8 @@ class ListTodo(generics.ListCreateAPIView):
 
 
 class DetailTodo(generics.RetrieveUpdateDestroyAPIView):
-    queryset = models.Todo.objects.all()
-    serializer_class = TodoSerializer
+    queryset = models.Comment.objects.all()
+    serializer_class = CommentSerializer
+    
+    
+
