@@ -19,5 +19,5 @@ import portfolio.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('portfolio.urls')),
-    path('apis/v1/', include('apis.urls')),
+    path('todos/', include('apis.urls')),
 ]
