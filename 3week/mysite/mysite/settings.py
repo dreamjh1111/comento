@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'apis',
+    'Todo',
     'rest_framework',
     'django_extensions',
 ]

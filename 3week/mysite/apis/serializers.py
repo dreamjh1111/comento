@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from portfolio.models import Comment
-from portfolio.models import Todo
+from Todo.models import Comment
+from Todo.models import Todo
 
 
 class CommentSerializer(serializers.ModelSerializer):
