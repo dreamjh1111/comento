@@ -1,7 +1,7 @@
 from rest_framework import generics
 
 from portfolio import models
-from .serializers import TodoSerializer, DetailTodoSerializer, CommentSerializer, DetailCommentSerializer, CommentsSerializer
+from .serializers import TodoSerializer, DetailTodoSerializer, DetailCommentSerializer, CommentsSerializer
 
 
 class ListTodo(generics.ListCreateAPIView):
